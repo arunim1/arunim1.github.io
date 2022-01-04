@@ -9,7 +9,8 @@
 		<title>Arunim</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/darkmain.css" id="theme-link" >
+
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-61YG0JP495"></script>
@@ -21,6 +22,18 @@
 			gtag('config', 'G-61YG0JP495');
 		</script>
 
+<!-- single stylesheet thing
+		<style>
+		body{
+			color: #000000;
+		}
+		.dark{
+            background-color: #232323;
+            color: #ffffff;
+        }
+		</style>
+-->
+
 	</head>
 	<body class="is-preload">
 
@@ -30,7 +43,8 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-							<span class="icon fa-gem"></span>
+							<span class="image logoo"><img src="images/ArunimLogoW.svg" alt="" id ="logo"/></span>
+							<!-- <span class="icon fa-gem"></span> -->
 						</div>
 						<div class="content">
 							<div class="inner">
@@ -40,8 +54,8 @@
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#personal">About Me</a></li>
-								<li><a href="#work">Work Exp</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#work">Work</a></li>
 								<li><a href="#projects">Projects</a></li>
 								<li><a href="#research">Research</a></li>
 								<li><a href="#contact">Contact</a></li>
@@ -54,7 +68,7 @@
 					<div id="main">
 
 						<!-- Intro -->
-							<article id="personal">
+							<article id="about">
 								<h2 class="major">About Me</h2>
 								<span class="image main"><img src="images/cropped-bg.png" alt="" /></span>
 								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
@@ -359,12 +373,36 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 					</div>
 
+					<!-- Dark Mode toggle -->
+					<div>
+					<button onclick="myFunction()">Toggle</button>
+					    <script>
+					        function myFunction() {
+										// Select the stylesheet <link>
+										const theme = document.querySelector("#theme-link");
+										const logo = document.querySelector("#logo");
+										// If the current URL contains "ligh-theme.css"
+										if (theme.getAttribute("href") == "assets/css/main.css") {
+											// ... then switch it to "dark-theme.css"
+											theme.href = "assets/css/darkmain.css";
+											logo.src = "images/ArunimLogoW.svg";
+										// Otherwise...
+										} else {
+											// ... switch it to "light-theme.css"
+											theme.href = "assets/css/main.css";
+											logo.src = "images/ArunimLogoB.svg";
+										}
+									}
+					    </script>
+					</div>
+
 				<!-- Footer -->
 					<footer id="footer">
 						<p class="copyright">&copy; Arunim. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 			</div>
+
 
 		<!-- BG -->
 			<div id="bg"></div>
