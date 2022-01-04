@@ -1,4 +1,5 @@
 @import url(fontawesome-all.min.css);
+
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
 /*
@@ -140,7 +141,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #ffffff;
+		color: #000000;
 		font-family: "Source Sans Pro", sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
@@ -152,17 +153,17 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dashed 1px rgba(255, 255, 255, 0.5);
+		border-bottom: dashed 1px #000000;
 		text-decoration: none;
 		color: inherit;
 	}
 
 		a:hover {
-			border-bottom: solid 1px rgba(255, 255, 255, 0.5);;
+			border-bottom: solid 1px #000000;
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: #000000;
 		font-weight: 600;
 	}
 
@@ -175,7 +176,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #000000;
 		font-weight: 600;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
@@ -201,7 +202,8 @@ input, select, textarea {
 	h1 {
 		font-size: 2.25rem;
 		line-height: 1.3;
-		letter-spacing: 0.5rem;
+		letter-spacing: 0.2rem;
+		text-transform: none;
 	}
 
 	h2 {
@@ -253,7 +255,7 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left: solid 4px #ffffff;
+		border-left: solid 4px #000000;
 		font-style: italic;
 		margin: 0 0 2rem 0;
 		padding: 0.5rem 0 0.5rem 2rem;
@@ -284,7 +286,7 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-bottom: solid 1px #ffffff;
+		border-bottom: solid 1px #000000;
 		margin: 2.75rem 0;
 	}
 
@@ -375,7 +377,7 @@ input, select, textarea {
 		}
 
 	label {
-		color: #ffffff;
+		color: #000000;
 		display: block;
 		font-size: 0.8rem;
 		font-weight: 300;
@@ -401,7 +403,7 @@ input, select, textarea {
 		transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		background-color: transparent;
 		border-radius: 4px;
-		border: solid 1px #ffffff;
+		border: solid 1px #000000;
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -441,7 +443,7 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #ffffff;
+			color: #000000;
 			background: #1b1f22;
 		}
 
@@ -485,7 +487,7 @@ input, select, textarea {
 			-webkit-user-select: none;
 			-ms-user-select: none;
 			user-select: none;
-			color: #ffffff;
+			color: #000000;
 			cursor: pointer;
 			display: inline-block;
 			font-size: 0.8rem;
@@ -517,7 +519,7 @@ input, select, textarea {
 				-ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
 				transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
 				border-radius: 4px;
-				border: solid 1px #ffffff;
+				border: solid 1px #000000;
 				content: '';
 				display: inline-block;
 				height: 1.65rem;
@@ -531,8 +533,8 @@ input, select, textarea {
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			background: #ffffff !important;
-			border-color: #ffffff !important;
+			background: #000000 !important;
+			border-color: #000000 !important;
 			color: #1b1f22;
 			content: '\f00c';
 		}
@@ -540,8 +542,8 @@ input, select, textarea {
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
 			background: rgba(255, 255, 255, 0.075);
-			border-color: #ffffff;
-			box-shadow: 0 0 0 1px #ffffff;
+			border-color: #000000;
+			box-shadow: 0 0 0 1px #000000;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -581,7 +583,7 @@ input, select, textarea {
 
 	.box {
 		border-radius: 4px;
-		border: solid 1px #ffffff;
+		border: solid 1px #000000;
 		margin-bottom: 2rem;
 		padding: 1.5em;
 	}
@@ -646,8 +648,8 @@ input, select, textarea {
 
 		.image:before {
 			pointer-events: none;
-			/* background-image: url("../../images/overlay.png"); */
-			/* background-color: rgba(19, 21, 25, 0); */
+			background-image: url("../../images/overlay.png");
+			background-color: rgba(19, 21, 25, 0.5);
 			border-radius: 4px;
 			content: '';
 			display: block;
@@ -755,7 +757,7 @@ input, select, textarea {
 		}
 
 			ul.alt li {
-				border-top: solid 1px #ffffff;
+				border-top: solid 1px #000000;
 				padding: 0.5em 0;
 			}
 
@@ -919,7 +921,7 @@ input, select, textarea {
 
 			ul.icons li a {
 				border-radius: 100%;
-				box-shadow: inset 0 0 0 1px #ffffff;
+				box-shadow: inset 0 0 0 1px #000000;
 				display: inline-block;
 				height: 2.25rem;
 				line-height: 2.25rem;
@@ -948,7 +950,7 @@ input, select, textarea {
 	}
 
 		table tbody tr {
-			border: solid 1px #ffffff;
+			border: solid 1px #000000;
 			border-left: 0;
 			border-right: 0;
 		}
@@ -962,7 +964,7 @@ input, select, textarea {
 		}
 
 		table th {
-			color: #ffffff;
+			color: #000000;
 			font-size: 0.9em;
 			font-weight: 600;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -970,11 +972,11 @@ input, select, textarea {
 		}
 
 		table thead {
-			border-bottom: solid 2px #ffffff;
+			border-bottom: solid 2px #000000;
 		}
 
 		table tfoot {
-			border-top: solid 2px #ffffff;
+			border-top: solid 2px #000000;
 		}
 
 		table.alt {
@@ -982,7 +984,7 @@ input, select, textarea {
 		}
 
 			table.alt tbody tr td {
-				border: solid 1px #ffffff;
+				border: solid 1px #000000;
 				border-left-width: 0;
 				border-top-width: 0;
 			}
@@ -1021,8 +1023,8 @@ input, select, textarea {
 		background-color: transparent;
 		border-radius: 4px;
 		border: 0;
-		box-shadow: inset 0 0 0 1px #ffffff;
-		color: #ffffff !important;
+		box-shadow: inset 0 0 0 1px #000000;
+		color: #000000 !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8rem;
@@ -1043,7 +1045,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba(255, 255, 255, 0.075);
+			background-color: rgba(0, 0, 0, 0.075);
 		}
 
 		input[type="submit"]:active,
@@ -1051,7 +1053,7 @@ input, select, textarea {
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: rgba(255, 255, 255, 0.175);
+			background-color: rgba(0, 0, 0, 0.175);
 		}
 
 		input[type="submit"].icon:before,
@@ -1085,7 +1087,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ffffff;
+			background-color: #000000;
 			color: #1b1f22 !important;
 			font-weight: 600;
 		}
@@ -1147,9 +1149,9 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			/* background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png"); */
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto, 256px 256px;
+			background-position: center, center;
+			background-repeat: no-repeat, repeat;
 			z-index: 2;
 		}
 
@@ -1162,8 +1164,8 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			/* background-image: url("../../images/232323.png"); */
-			background-color: #232323;
+			/* background-image: url("../../images/f1ece1.png"); */
+			background-color: #f1ece1;
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1182,7 +1184,8 @@ input, select, textarea {
 		}
 
 		body.is-preload #bg:before {
-			background-color: #ffffff;
+			background-color: #000001;
+			/* was #000000 but Arunim changed it*/
 		}
 
 /* Wrapper */
@@ -1259,10 +1262,10 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		/* background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+		background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 		background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 		background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%); */
+		background-image: radial-gradient(rgba(0, 0, 0, 0.0) 25%, rgba(0, 0, 0, 0) 55%);
 		max-width: 100%;
 		text-align: center;
 	}
@@ -1295,25 +1298,25 @@ input, select, textarea {
 				display: none;
 			}
 
-			#header .logo {
-				width: 7.5rem;
-				height: 7.5rem;
-				line-height: 5.5rem;
-				border: solid 1px #ff9900;
-				border-radius: 100%;
+		#header .logo {
+			width: 7.5rem;
+			height: 7.5rem;
+			line-height: 5.5rem;
+			border: solid 1px #ff9900;
+			border-radius: 100%;
+		}
+
+			#header .logo .icon:before {
+				font-size: 2rem;
 			}
 
-				#header .logo .icon:before {
-					font-size: 2rem;
-				}
-
-				#header .content {
-					border-style: solid;
-					border-color: #ff9900;
-					border-top-width: 1px;
-					border-bottom-width: 1px;
-					max-width: 100%;
-				}
+		#header .content {
+			border-style: solid;
+			border-color: #ff9900;
+			border-top-width: 1px;
+			border-bottom-width: 1px;
+			max-width: 100%;
+		}
 
 			#header .content .inner {
 				-moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
@@ -1334,23 +1337,24 @@ input, select, textarea {
 				}
 
 			#header .content p {
-				text-transform: uppercase;
+				text-transform: none;
 				letter-spacing: 0.2rem;
+				word-spacing: 0.23rem;
 				font-size: 0.8rem;
 				line-height: 2;
 			}
 
-			#header nav ul {
-				display: -moz-flex;
-				display: -webkit-flex;
-				display: -ms-flex;
-				display: flex;
-				margin-bottom: 0;
-				list-style: none;
-				padding-left: 0;
-				border: solid 1px #ff9900;
-				border-radius: 4px;
-			}
+		#header nav ul {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			margin-bottom: 0;
+			list-style: none;
+			padding-left: 0;
+			border: solid 1px #ff9900;
+			border-radius: 4px;
+		}
 
 			#header nav ul li {
 				padding-left: 0;
@@ -1367,7 +1371,7 @@ input, select, textarea {
 					height: 2.75rem;
 					line-height: 2.75rem;
 					padding: 0 1.25rem 0 1.45rem;
-					text-transform: uppercase;
+					text-transform: none;
 					letter-spacing: 0.2rem;
 					font-size: 0.8rem;
 					border-bottom: 0;
@@ -1381,16 +1385,16 @@ input, select, textarea {
 						background-color: rgba(255, 255, 255, 0.175);
 					}
 
-					#header nav.use-middle:after {
-						content: '';
-						display: block;
-						position: absolute;
-						top: 0;
-						left: calc(50% - 1px);
-						width: 1px;
-						height: 100%;
-						background: #ff9900;
-					}
+		#header nav.use-middle:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: calc(50% - 1px);
+			width: 1px;
+			height: 100%;
+			background: #ff9900;
+		}
 
 		#header nav.use-middle ul li.is-middle {
 			border-left: 0;
@@ -1446,8 +1450,8 @@ input, select, textarea {
 				}
 
 			#header .logo {
-				width: 4.75rem;
-				height: 4.75rem;
+				width: 5.75rem;
+				height: 5.75rem;
 				line-height: 4.75rem;
 			}
 
@@ -1484,10 +1488,10 @@ input, select, textarea {
 					max-width: 100%;
 				}
 
-				#header nav ul li {
-					border-left: 0;
-					border-top: solid 1px #ff9900;
-				}
+					#header nav ul li {
+						border-left: 0;
+						border-top: solid 1px #ff9900;
+					}
 
 						#header nav ul li:first-child {
 							border-top: 0;
@@ -1551,7 +1555,8 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(35, 35, 35, 0.85);
+			/* background-color: rgba(27, 31, 34, 0.85); */
+			background-color: #f1ece1;
 			border-radius: 4px;
 			opacity: 0;
 		}
@@ -1664,3 +1669,11 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+/* Light mode
+		.light #bg:after {
+
+			#background-image: url("../../images/f1ece1.png");
+
+      }
+*/
