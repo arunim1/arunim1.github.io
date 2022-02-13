@@ -197,7 +197,7 @@ input, select, textarea {
 		}
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
-			border-bottom: solid 1px #ff9900;
+			border-bottom: solid 2px #ff9900;
 			width: -moz-max-content;
 			width: -webkit-max-content;
 			width: -ms-max-content;
@@ -261,10 +261,10 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left: solid 4px #000000;
-		font-style: italic;
+		border-left: solid 2px #ff9900;
+		/*font-style: italic;*/
 		margin: 0 0 2rem 0;
-		padding: 0.5rem 0 0.5rem 2rem;
+		padding: 0.25rem 0 0.25rem 1.5rem;
 	}
 
 	code {
@@ -1218,8 +1218,8 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bglight.png");
-			/* background-color: #f1ece1; */
+			/*background-image: url("../../images/70bglight.png");*/
+			background-color: #f1ece1;
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1315,10 +1315,10 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		background-image: -moz-radial-gradient(rgba(255, 255, 255, 0.25) 25%, rgba(255, 255, 255, 0) 55%);
+		/*background-image: -moz-radial-gradient(rgba(255, 255, 255, 0.25) 25%, rgba(255, 255, 255, 0) 55%);
 		background-image: -webkit-radial-gradient(rgba(255, 255, 255, 0.25) 25%, rgba(255, 255, 255, 0) 55%);
 		background-image: -ms-radial-gradient(rgba(255, 255, 255, 0.25) 25%, rgba(255, 255, 255, 0) 55%);
-		background-image: radial-gradient(rgba(255, 255, 255, 0.25) 25%, rgba(255, 255, 255, 0) 55%);
+		background-image: radial-gradient(rgba(255, 255, 255, 0.25) 25%, rgba(255, 255, 255, 0) 55%);*/
 		max-width: 100%;
 		text-align: center;
 	}
