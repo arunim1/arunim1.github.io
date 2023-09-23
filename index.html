@@ -5,7 +5,11 @@
 		<title>Arunim</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- <link rel="stylesheet" href="assets/css/main.css" id="theme-link"/> -->
+		<!-- Load both themes in advance and disable the light theme by default -->
+		<link id="dark-theme" rel="stylesheet" type="text/css" href="assets/css/main.css">
+		<link id="light-theme" rel="stylesheet" type="text/css" href="assets/css/mainlight.css" disabled>
+
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<!-- alter favicons here -->
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -410,9 +414,28 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				-->
 
 				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Arunim 2023</p>
-					</footer>
+
+				<footer id="footer">
+					<div>
+						<altbutton onclick="myFunction()" class="icon solid fa-adjust altbutton"></altbutton>
+							<script>
+								function myFunction() {
+									const darkTheme = document.querySelector("#dark-theme");
+									const lightTheme = document.querySelector("#light-theme");
+									
+									// This will disable the currently enabled theme and enable the disabled one
+									if (darkTheme.disabled) {
+										darkTheme.disabled = false;
+										lightTheme.disabled = true;
+									} else {
+										darkTheme.disabled = true;
+										lightTheme.disabled = false;
+									}
+								}
+							</script>
+						</div>
+					<p class="copyright">&copy; Arunim 2023</p>
+				</footer>
 
 			</div>
 

@@ -1657,5 +1657,11 @@ input, select, textarea {
 		  }
 
 		/* now in the style of Logseq */
+
+		.altbutton {
+			font-size: 2em; /* Adjusts the size of the font-based icon */
+			/* transition: font-size 0.3s ease; */
+		}
+		
 		
 		  

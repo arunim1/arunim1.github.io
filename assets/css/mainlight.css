@@ -1,11 +1,9 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway|Montserrat:700");
+/* import atkinson hyperlegible font */
+@import url("https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible");
 
-/*
-	Indivisible by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
-*/
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -95,7 +93,11 @@ input, select, textarea {
 	}
 
 	body {
-		background: #f4f4f4;
+		/*background: #f4f4f4;
+		background-image: url("/images/plant1.png");
+		background: #232323ef; */
+		background-image: url("/images/lightpattern.png");
+
 	}
 
 		body.is-preload-0 *, body.is-preload-0 *:before, body.is-preload-0 *:after {
@@ -113,7 +115,9 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #444;
-		font-family: "Raleway", Helvetica, sans-serif;
+		/* color: #f1ece1; */
+		/* font-family: "Raleway", Helvetica, sans-serif;  */
+		font-family: "Atkinson Hyperlegible", sans-serif;
 		font-size: 14pt;
 		font-weight: 300;
 		line-height: 1.75;
@@ -123,7 +127,7 @@ input, select, textarea {
 		@media screen and (max-width: 1920px) {
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 12pt;
 			}
 
 		}
@@ -131,7 +135,7 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			body, input, select, textarea {
-				font-size: 10pt;
+				font-size: 11pt;
 			}
 
 		}
@@ -153,6 +157,7 @@ input, select, textarea {
 
 	strong, b {
 		color: #555;
+		/* color: #fff; */
 		font-weight: 500;
 	}
 
@@ -166,7 +171,9 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #555;
-		font-family: "Montserrat", sans-serif;
+		/* color: #f1ece1; */
+
+		font-family: "Montserrat", sans-serif; /* MODIFY FONT HERE */
 		font-weight: 700;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
@@ -180,19 +187,19 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 2em;
+		font-size: 2.25em;
 	}
 
 	h2 {
-		font-size: 1.75em;
+		font-size: 2em;
 	}
 
 	h3 {
-		font-size: 1.25em;
+		font-size: 1.5em;
 	}
 
 	h4 {
-		font-size: 1em;
+		font-size: 1.25em;
 	}
 
 	h5 {
@@ -228,10 +235,10 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left: solid 4px #cccccc;
-		font-style: italic;
-		margin: 0 0 2em 0;
-		padding: 0.5em 0 0.5em 2em;
+		border-left: solid 1px #cccccc;
+		/*font-style: italic;*/
+		margin: 0 0 0em -0.835em;
+		padding: 0em 0 0em 0.835em;
 	}
 
 	code {
@@ -411,6 +418,7 @@ input, select, textarea {
 
 	label {
 		color: #555;
+		/* color: #fff; */
 		display: block;
 		font-size: 0.8em;
 		font-weight: 500;
@@ -463,7 +471,7 @@ input, select, textarea {
 		select:focus,
 		textarea:focus {
 			border-color: #49c8ff;
-			box-shadow: 0 0 0 1px #49c8ff;
+			box-shadow: 0 0 0 1px #49c8ff; /*#cyan;*/
 		}
 
 	select {
@@ -541,7 +549,7 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
+				font-family: 'Font Awesome 5 Free'; 
 				font-weight: 900;
 			}
 
@@ -568,6 +576,7 @@ input, select, textarea {
 			background: #555;
 			border-color: #555;
 			color: #ffffff;
+			/* color: #232323; */
 			content: '\f00c';
 		}
 
@@ -997,6 +1006,7 @@ input, select, textarea {
 		border: 0;
 		box-shadow: inset 0 0 0 1px #cccccc;
 		color: #555 !important;
+		/* color: #fff; */
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8em;
@@ -1157,6 +1167,7 @@ input, select, textarea {
 			box-shadow: none;
 			background-color: #555;
 			color: #f4f4f4 !important;
+
 		}
 
 			input[type="submit"].primary:hover,
@@ -1306,6 +1317,7 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.5s ease;
 			transition: transform 0.5s ease;
 			background-color: #ffffff;
+			/* background-color: #232323; */
 			padding: 3em;
 			width: 50%;
 		}
@@ -1618,10 +1630,36 @@ input, select, textarea {
 		  }
 
 		  .collapsible-header:hover {
-			text-decoration: underline;
+			text-decoration: none;
+			font-style: none;
+			text-shadow: #16b9ff 1px 2px 2px;
 		  }
 
-		  /*.collapsible-header::before {
+		  .collapsible-header::before {
+			display: none;
+		  }
+
+		  .collapsible-header-before {
+			display: inline-block;
 			content: "+ ";
-		  } */
+		  }
+		
+		  .collapsible-header::before {
+			content: "+ ";
+		  }
+		  
+		  .rotating-arrow.not-collapsed svg {
+			transform: rotate(90deg);
+		  }
+		  
+		  .rotating-arrow svg {
+			transition: all 100ms ease-in 0ms;
+		  }
+
+		/* now in the style of Logseq */
+		.altbutton {
+			font-size: 2em; /* Adjusts the size of the font-based icon */
+			/* transition: font-size 0.3s ease; */
+		}
+
 		  
